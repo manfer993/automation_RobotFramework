@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.robotframework.ide.eclipse.main.plugin.robotNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>libspecs/Screenshot.py</name>
+			<type>1</type>
+			<location>C:/Users/manfe/AppData/Local/Programs/Python/Python37-32/lib/site-packages/robot/libraries/Screenshot.py</location>
+		</link>
+	</linkedResources>
 </projectDescription>

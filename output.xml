@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190428 20:44:01.210" rpa="false">
-<suite id="s1" name="testSuite" source="C:\Users\manfe\eclipse-workspace\RobotTest\Tests\testSuite.robot">
-<test id="s1-t1" name="CheckingLoginPage">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20191215 15:57:44.729" rpa="false">
+<suite id="s1" name="RobotTest" source="C:\Users\manfe\eclipse-workspace\RobotTest">
+<suite id="s1-s1" name="Tests" source="C:\Users\manfe\eclipse-workspace\RobotTest\Tests">
+<suite id="s1-s1-s1" name="testSuite" source="C:\Users\manfe\eclipse-workspace\RobotTest\Tests\testSuite.robot">
+<test id="s1-s1-s1-t1" name="CheckingLoginPage">
 <kw name="OpenBrowseInPage" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -9,8 +11,8 @@
 <arg>${URL}</arg>
 <arg>@{BROWSER}[0]</arg>
 </arguments>
-<msg timestamp="20190428 20:44:01.837" level="INFO">Opening browser 'chrome' to base url 'http://claimsfront.herokuapp.com/mx/qa/#/'.</msg>
-<status status="PASS" starttime="20190428 20:44:01.837" endtime="20190428 20:44:10.055"></status>
+<msg timestamp="20191215 15:57:45.207" level="INFO">Opening browser 'chrome' to base url 'http://claimsfront.herokuapp.com/mx/qa/#/'.</msg>
+<status status="PASS" starttime="20191215 15:57:45.206" endtime="20191215 15:57:55.693"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -18,7 +20,7 @@
 <arg>1366</arg>
 <arg>768</arg>
 </arguments>
-<status status="PASS" starttime="20190428 20:44:10.055" endtime="20190428 20:44:11.183"></status>
+<status status="PASS" starttime="20191215 15:57:55.694" endtime="20191215 15:57:57.808"></status>
 </kw>
 <kw name="Set Window Position" library="SeleniumLibrary">
 <doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
@@ -26,16 +28,27 @@
 <arg>0</arg>
 <arg>0</arg>
 </arguments>
-<status status="PASS" starttime="20190428 20:44:11.183" endtime="20190428 20:44:11.291"></status>
+<status status="PASS" starttime="20191215 15:57:57.809" endtime="20191215 15:57:57.917"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<status status="PASS" starttime="20190428 20:44:11.291" endtime="20190428 20:44:11.291"></status>
+<status status="PASS" starttime="20191215 15:57:57.917" endtime="20191215 15:57:57.919"></status>
 </kw>
-<status status="PASS" starttime="20190428 20:44:01.837" endtime="20190428 20:44:11.291"></status>
+<status status="PASS" starttime="20191215 15:57:45.206" endtime="20191215 15:57:57.919"></status>
+</kw>
+<kw name="SleepPage">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191215 15:58:02.922" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20191215 15:57:57.920" endtime="20191215 15:58:02.922"></status>
+</kw>
+<status status="PASS" starttime="20191215 15:57:57.920" endtime="20191215 15:58:02.922"></status>
 </kw>
 <kw name="LoginWithUser">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -44,8 +57,8 @@
 <arg>id=documentNumber</arg>
 <arg>&amp;{CREDENTIALS}[user]</arg>
 </arguments>
-<msg timestamp="20190428 20:44:11.295" level="INFO">Typing text '1019077858' into text field 'id=documentNumber'.</msg>
-<status status="PASS" starttime="20190428 20:44:11.295" endtime="20190428 20:44:11.648"></status>
+<msg timestamp="20191215 15:58:02.924" level="INFO">Typing text '1019077858' into text field 'id=documentNumber'.</msg>
+<status status="PASS" starttime="20191215 15:58:02.923" endtime="20191215 15:58:03.180"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into text field identified by ``locator``.</doc>
@@ -53,18 +66,18 @@
 <arg>id=password</arg>
 <arg>&amp;{CREDENTIALS}[password]</arg>
 </arguments>
-<msg timestamp="20190428 20:44:11.648" level="INFO">Typing password into text field 'id=password'.</msg>
-<status status="PASS" starttime="20190428 20:44:11.648" endtime="20190428 20:44:11.891"></status>
+<msg timestamp="20191215 15:58:03.180" level="INFO">Typing password into text field 'id=password'.</msg>
+<status status="PASS" starttime="20191215 15:58:03.180" endtime="20191215 15:58:03.305"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>id=btnLoginMovil</arg>
 </arguments>
-<msg timestamp="20190428 20:44:11.895" level="INFO">Clicking button 'id=btnLoginMovil'.</msg>
-<status status="PASS" starttime="20190428 20:44:11.895" endtime="20190428 20:44:12.111"></status>
+<msg timestamp="20191215 15:58:03.306" level="INFO">Clicking button 'id=btnLoginMovil'.</msg>
+<status status="PASS" starttime="20191215 15:58:03.305" endtime="20191215 15:58:03.445"></status>
 </kw>
-<status status="PASS" starttime="20190428 20:44:11.291" endtime="20190428 20:44:12.111"></status>
+<status status="PASS" starttime="20191215 15:58:02.923" endtime="20191215 15:58:03.446"></status>
 </kw>
 <kw name="SleepPage">
 <kw name="Sleep" library="BuiltIn">
@@ -72,10 +85,10 @@
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20190428 20:44:17.117" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20190428 20:44:12.115" endtime="20190428 20:44:17.117"></status>
+<msg timestamp="20191215 15:58:08.447" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20191215 15:58:03.447" endtime="20191215 15:58:08.447"></status>
 </kw>
-<status status="PASS" starttime="20190428 20:44:12.111" endtime="20190428 20:44:17.117"></status>
+<status status="PASS" starttime="20191215 15:58:03.446" endtime="20191215 15:58:08.447"></status>
 </kw>
 <kw name="LogoutUser">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -83,10 +96,10 @@
 <arguments>
 <arg>id=btn-bl-logout</arg>
 </arguments>
-<msg timestamp="20190428 20:44:17.117" level="INFO">Clicking button 'id=btn-bl-logout'.</msg>
-<status status="PASS" starttime="20190428 20:44:17.117" endtime="20190428 20:44:17.427"></status>
+<msg timestamp="20191215 15:58:08.449" level="INFO">Clicking button 'id=btn-bl-logout'.</msg>
+<status status="PASS" starttime="20191215 15:58:08.449" endtime="20191215 15:58:08.687"></status>
 </kw>
-<status status="PASS" starttime="20190428 20:44:17.117" endtime="20190428 20:44:17.427"></status>
+<status status="PASS" starttime="20191215 15:58:08.448" endtime="20191215 15:58:08.688"></status>
 </kw>
 <kw name="FinalLogs">
 <kw name="Log" library="BuiltIn">
@@ -94,42 +107,103 @@
 <arguments>
 <arg>Test Completed</arg>
 </arguments>
-<msg timestamp="20190428 20:44:17.431" level="INFO">Test Completed</msg>
-<status status="PASS" starttime="20190428 20:44:17.427" endtime="20190428 20:44:17.431"></status>
+<msg timestamp="20191215 15:58:08.689" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20191215 15:58:08.689" endtime="20191215 15:58:08.690"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>This test was executed by %{username} on %{os}</arg>
 </arguments>
-<msg timestamp="20190428 20:44:17.431" level="INFO">This test was executed by manfe on Windows_NT</msg>
-<status status="PASS" starttime="20190428 20:44:17.431" endtime="20190428 20:44:17.431"></status>
+<msg timestamp="20191215 15:58:08.691" level="INFO">This test was executed by manfe on Windows_NT</msg>
+<status status="PASS" starttime="20191215 15:58:08.690" endtime="20191215 15:58:08.691"></status>
 </kw>
-<status status="PASS" starttime="20190428 20:44:17.427" endtime="20190428 20:44:17.431"></status>
+<status status="PASS" starttime="20191215 15:58:08.688" endtime="20191215 15:58:08.692"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20190428 20:44:17.435" endtime="20190428 20:44:20.553"></status>
+<status status="PASS" starttime="20191215 15:58:08.692" endtime="20191215 15:58:12.753"></status>
 </kw>
 <doc>This is a sample login test</doc>
 <tags>
 <tag>SmokeTest</tag>
 </tags>
-<status status="PASS" starttime="20190428 20:44:01.837" endtime="20190428 20:44:20.553" critical="yes"></status>
+<status status="PASS" starttime="20191215 15:57:45.205" endtime="20191215 15:58:12.753" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="OtherTest">
+<kw name="OpenBrowseInPage" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>@{BROWSER}[0]</arg>
+</arguments>
+<msg timestamp="20191215 15:58:12.756" level="INFO">Opening browser 'chrome' to base url 'http://claimsfront.herokuapp.com/mx/qa/#/'.</msg>
+<status status="PASS" starttime="20191215 15:58:12.755" endtime="20191215 15:58:22.292"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1366</arg>
+<arg>768</arg>
+</arguments>
+<status status="PASS" starttime="20191215 15:58:22.293" endtime="20191215 15:58:24.406"></status>
+</kw>
+<kw name="Set Window Position" library="SeleniumLibrary">
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<arguments>
+<arg>0</arg>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20191215 15:58:24.407" endtime="20191215 15:58:24.511"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" starttime="20191215 15:58:24.512" endtime="20191215 15:58:24.513"></status>
+</kw>
+<status status="PASS" starttime="20191215 15:58:12.755" endtime="20191215 15:58:24.513"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Prueba</arg>
+</arguments>
+<msg timestamp="20191215 15:58:24.514" level="INFO">Prueba</msg>
+<status status="PASS" starttime="20191215 15:58:24.514" endtime="20191215 15:58:24.514"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20191215 15:58:24.515" endtime="20191215 15:58:28.574"></status>
+</kw>
+<doc>This is the second test case</doc>
+<tags>
+<tag>Test</tag>
+</tags>
+<status status="PASS" starttime="20191215 15:58:12.754" endtime="20191215 15:58:28.574" critical="yes"></status>
 </test>
 <doc>Este proyecto realiza pruebas automatizadas a la aplicacion de Claims</doc>
-<status status="PASS" starttime="20190428 20:44:01.210" endtime="20190428 20:44:20.553"></status>
+<status status="PASS" starttime="20191215 15:57:44.797" endtime="20191215 15:58:28.575"></status>
+</suite>
+<status status="PASS" starttime="20191215 15:57:44.794" endtime="20191215 15:58:28.579"></status>
+</suite>
+<status status="PASS" starttime="20191215 15:57:44.768" endtime="20191215 15:58:28.581"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0">SmokeTest</stat>
+<stat pass="1" fail="0">Test</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="testSuite">testSuite</stat>
+<stat pass="2" fail="0" id="s1" name="RobotTest">RobotTest</stat>
+<stat pass="2" fail="0" id="s1-s1" name="Tests">RobotTest.Tests</stat>
+<stat pass="2" fail="0" id="s1-s1-s1" name="testSuite">RobotTest.Tests.testSuite</stat>
 </suite>
 </statistics>
 <errors>

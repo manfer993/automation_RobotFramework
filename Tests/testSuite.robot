@@ -16,6 +16,7 @@
  CheckingLoginPage
    [Documentation]  This is a sample login test
    [Tags]           SmokeTest
+   SleepPage
    LoginWithUser
    SleepPage
    LogoutUser    
